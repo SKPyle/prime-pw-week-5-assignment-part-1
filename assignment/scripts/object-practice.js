@@ -8,9 +8,14 @@ console.log('***** Object Practice *****')
   - Give it  a numeric 'shoeCount' property
   - Also give it an array 'favThreeFoods'
 */
-const me = {
+let me = {
+  firstName: 'Seth',
+  lastName: 'Pyle',
+  hasSiblings: true,
+  shoeCount: 4 + 1,
+  faveThreeFoods:['pizza', 'tacos', 'strawberries']
   // TODO - add properties here
-};
+}
 console.log('A little about me:', me);
 
 /* 2. Accessing object properties.
@@ -21,11 +26,17 @@ console.log('A little about me:', me);
 */
 
 
+const fullName = (me.firstName + " " + me.lastName); //logging properties from an object
+console.log(fullName);
+
+
 
 /* 3. Nested arrays
   - Console.log your first favorite food
   - Console.log your last favorite food 
 */
+console.log(me.faveThreeFoods[0]);
+console.log(me.faveThreeFoods[2]);
 
 
 
@@ -35,6 +46,7 @@ console.log('A little about me:', me);
   - Set your object's shoeCount to be what it was plus 1
   - Console.log your updated shoe count. 
 */
+console.log(me.shoeCount);
 
 
 /* 5. Add a new property to an existing object.
@@ -43,3 +55,6 @@ console.log('A little about me:', me);
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
+
+me.FavoriteColor = "Green";
+console.log(me);
