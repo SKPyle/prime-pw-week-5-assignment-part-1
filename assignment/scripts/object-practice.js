@@ -8,7 +8,7 @@ console.log('***** Object Practice *****')
   - Give it  a numeric 'shoeCount' property
   - Also give it an array 'favThreeFoods'
 */
-let me = {
+let me = {            //creating object
   firstName: 'Seth',
   lastName: 'Pyle',
   hasSiblings: true,
@@ -35,8 +35,8 @@ console.log(fullName);
   - Console.log your first favorite food
   - Console.log your last favorite food 
 */
-console.log(me.faveThreeFoods[0]);
-console.log(me.faveThreeFoods[2]);
+console.log(me.faveThreeFoods[0]); //should log pizza
+console.log(me.faveThreeFoods[2]); // should log strawberries
 
 
 
@@ -46,7 +46,7 @@ console.log(me.faveThreeFoods[2]);
   - Set your object's shoeCount to be what it was plus 1
   - Console.log your updated shoe count. 
 */
-console.log(me.shoeCount);
+console.log(me.shoeCount); // expecting 5 in log
 
 
 /* 5. Add a new property to an existing object.
@@ -56,5 +56,5 @@ console.log(me.shoeCount);
   - Console.log your object
 */
 
-me.FavoriteColor = "Green";
+me.FavoriteColor = "Green"; // adding additional properties to an object
 console.log(me);
